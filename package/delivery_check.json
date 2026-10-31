@@ -1,0 +1,18 @@
+{
+  "checked_at_utc": "2026-10-26T14:10:33.912451+00:00",
+  "standalone_cli_passed": true,
+  "unit_test_exit_code": 0,
+  "csv_rows_reloaded": 901703,
+  "performance": {
+    "atlas_initialization_seconds": 0.4557,
+    "warm_queries": 240,
+    "median_lookup_ms": 0.1091,
+    "p95_lookup_ms": 0.1204,
+    "scope": "Local CPU/process only, excluding HTTP transport and client rendering; reuse the loaded Atlas."
+  },
+  "naming_scan": {
+    "text_files_checked": 57,
+    "matches": 0,
+    "scope": "Scene-context sources and handoff text assets; not a whole-server scan."
+  }
+}

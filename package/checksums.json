@@ -1,0 +1,202 @@
+{
+  "PUBLIC_DELIVERY_CHECK.json": {
+    "sha256": "c1d5dd1df92186e9d41b3709d4f1e6a61cce1477d91a2f7180d511a059a36d85",
+    "size_bytes": 2958
+  },
+  "README.md": {
+    "sha256": "3d1764fca6739ea89cae1546f16dcc6b4857c2ba24bec2b03c68e29ba3ab2ea5",
+    "size_bytes": 8565
+  },
+  "RELEASE_NOTES.md": {
+    "sha256": "74db9362588d2935ab979a8d3642a7b37770c2684a6d49ad5992f6bfd34961fb",
+    "size_bytes": 1350
+  },
+  "boundary_provenance.json": {
+    "sha256": "2892b795cc4ca709e7ad43cf150a4bd2925d799e94b440d2b6424287ba266085",
+    "size_bytes": 1622
+  },
+  "context.py": {
+    "sha256": "ec676747f984a97946b30611d6dc98d89e57951d2abf199368b2f991a3c4a6d0",
+    "size_bytes": 14025
+  },
+  "conus_cells.csv.gz": {
+    "sha256": "8ab152bdd70d41c3ab6748f723d7f49d90dc97873f51abbaec5dc25ea14154f6",
+    "size_bytes": 56518725
+  },
+  "conus_context.npz": {
+    "sha256": "09a25e57b25c5f74e2b09509e8a0f73314d14f03e2f8feb51306700e574c0741",
+    "size_bytes": 19861143
+  },
+  "delivery_check.json": {
+    "sha256": "d3083610230245186914153977b7752b9e73404170bd93dd1008c0631606e97e",
+    "size_bytes": 574
+  },
+  "examples/boulder_foothills.local.json": {
+    "sha256": "c3f9594f0560ff1ff34cfca2423f11e85fa655f7ad7ade159f9d54ade9745292",
+    "size_bytes": 485351
+  },
+  "examples/boulder_foothills.national.json": {
+    "sha256": "86392cf8ec8578f8061d24c3db9f23737a1c29053375acec149c31fdbf8303ad",
+    "size_bytes": 2395
+  },
+  "examples/cape_hatteras.national.json": {
+    "sha256": "c20be14347881846d93f8289ad28b94e6f5bee863af36a5292bf9fa51200e02c",
+    "size_bytes": 2405
+  },
+  "examples/central_iowa.local.json": {
+    "sha256": "030d276b497d2ce508e027bb2c4e6e20f01a0168bd97cbc35f3eb60b7bb1f8cd",
+    "size_bytes": 479800
+  },
+  "examples/central_iowa.national.json": {
+    "sha256": "9c632e192a3521a5feb6652786c364573e1c8e964a7781df4f8ce982d46682a7",
+    "size_bytes": 2361
+  },
+  "examples/death_valley_area.local.json": {
+    "sha256": "2451f8e47b30b6318e672f9cf1bec3323af4675371a5c87ac408719d30071dbc",
+    "size_bytes": 477827
+  },
+  "examples/death_valley_area.national.json": {
+    "sha256": "d1baadec27ac68e8316a73bc3190cee27ae7565e8019994ab9796520020eb7a5",
+    "size_bytes": 2358
+  },
+  "examples/everglades_area.local.json": {
+    "sha256": "9aa9e86975ab968e3173470fe7d9bffedba41332a7e6ae4678041497f3515d12",
+    "size_bytes": 473579
+  },
+  "examples/everglades_area.national.json": {
+    "sha256": "e1decb54d87829c672c423f54ddc9f8562cc430b24dfc4fd8f9d970ddd298b9a",
+    "size_bytes": 2387
+  },
+  "examples/flint_hills_mixed_landscape.local.json": {
+    "sha256": "a1f629c1ed63e05faa8dc52ca2c932de660bd13d132324ddaea70bf52d262a83",
+    "size_bytes": 479816
+  },
+  "examples/flint_hills_mixed_landscape.national.json": {
+    "sha256": "06ea676dcfee26e8f84a36bd755bc15c2ea45d9ffba2305b94199f11d3f86b30",
+    "size_bytes": 2395
+  },
+  "examples/great_smoky_mountains_area.local.json": {
+    "sha256": "3d966731f855b3ed5950f2c1a466ad8e8fb0a32eda7dcf53489cd958b316e5bb",
+    "size_bytes": 485239
+  },
+  "examples/great_smoky_mountains_area.national.json": {
+    "sha256": "f1edd43383c76fa2ec585b6fc194b637bf8977f1438376ac1abcda05a7babafc",
+    "size_bytes": 2364
+  },
+  "examples/key_west.national.json": {
+    "sha256": "f1560d400b827c55a061ac9be37cfd2abcdd9cf48c627ec698cd1ed7a179739b",
+    "size_bytes": 2368
+  },
+  "examples/memphis_riverfront.local.json": {
+    "sha256": "7c5fd0d39d1680fd1ac2f01227f0dd8e016a584b64320bf4da23ab0298ddaf7d",
+    "size_bytes": 476946
+  },
+  "examples/memphis_riverfront.national.json": {
+    "sha256": "f266fead1179c75e61cafd0d660fd61739ca297a39abe4278c5da3851b8fa77e",
+    "size_bytes": 2400
+  },
+  "examples/mojave_desert_area.local.json": {
+    "sha256": "7b479c7128c338f0ec29c2c20fa117b8c05899c1fde5fbf593bfe246e9e38b9e",
+    "size_bytes": 480657
+  },
+  "examples/mojave_desert_area.national.json": {
+    "sha256": "ad34cd6d66b9ac743ce4923de875561065cb797a0415473b4b4a1b510479727a",
+    "size_bytes": 2371
+  },
+  "examples/montauk.national.json": {
+    "sha256": "b08d525b7f3a3d33dc55b92d6dc865828fbfd127405d7ab174765d033133ddef",
+    "size_bytes": 2385
+  },
+  "examples/mount_rainier_area.local.json": {
+    "sha256": "6cc5cfac145f483b3243fd49bebf22a4fd46d68df6fd09f9141a2bd7624f998b",
+    "size_bytes": 485553
+  },
+  "examples/mount_rainier_area.national.json": {
+    "sha256": "8ab678f491f39b7e979a8f7ac3994e6167e23595d2d2c57db4ff28496315e26b",
+    "size_bytes": 2380
+  },
+  "examples/new_york_central_park_area.local.json": {
+    "sha256": "cbc4bd6699df5fb75691bf102e30743e8d7d71130a48f458e0ef795d617a05b1",
+    "size_bytes": 477443
+  },
+  "examples/new_york_central_park_area.national.json": {
+    "sha256": "501f56ad3ee098e60a230eafc224ab701dc2de059dead8dd7e45d558fb6d5578",
+    "size_bytes": 2359
+  },
+  "examples/tallahassee_urban_woodland.local.json": {
+    "sha256": "8e0fadc55d2eace0db7736159b2bbb09b9dc8fbafc087f9f1d40e3e299ade8d3",
+    "size_bytes": 478939
+  },
+  "examples/tallahassee_urban_woodland.national.json": {
+    "sha256": "fcfd68b530f7aa55d658bd289b9b71ae31e021f8beab10616b53320eca6a38ab",
+    "size_bytes": 2377
+  },
+  "examples/yosemite_valley_area.local.json": {
+    "sha256": "e72555ce907904f253635ba3d3407f232ff63ef083b109f5f47609309c7e190f",
+    "size_bytes": 485743
+  },
+  "examples/yosemite_valley_area.national.json": {
+    "sha256": "36f5c662d4fb3868dd1c417b127c509bd946a81f34f9b9bbd54cbc90b24a4acc",
+    "size_bytes": 2428
+  },
+  "landscape_examples.png": {
+    "sha256": "eb79a6741384eea652c38acaef49741a672a46cdccab430bdf28814e955a189e",
+    "size_bytes": 460050
+  },
+  "lower_48.geojson": {
+    "sha256": "7efbba593dd6a43da332c5217c42bfe8efbb7595282564cdc38731c4c4477e19",
+    "size_bytes": 2563969
+  },
+  "manifest.json": {
+    "sha256": "6f17bb96b44465970899f2ee2d95448abe2490aae0a22c35f139efd6aa3d9867",
+    "size_bytes": 4047
+  },
+  "query.py": {
+    "sha256": "096d9c812c42034e70355422ee52fae4f48490697e9155be36f687d12b44b24f",
+    "size_bytes": 1205
+  },
+  "requirements.txt": {
+    "sha256": "fc6a2b7ca6d62640ca53c410f36dec3c49ae0cdc79e18acf9d47931adfefdb17",
+    "size_bytes": 93
+  },
+  "response.schema.json": {
+    "sha256": "4d87d7c8f91c798df534aaff3a64c3409e52410173a6e743ec0d82d062f6a826",
+    "size_bytes": 30720
+  },
+  "source_metadata/elevation.xml": {
+    "sha256": "990929c215f1a69bfa7763e9517ad77796707ab42bec98e4e97d49bd13d22e24",
+    "size_bytes": 14818
+  },
+  "source_metadata/slope.xml": {
+    "sha256": "5bb7599ae1188c44a65a2e4df015c8fe4be753850ddd8026e9639ae087a1c3f1",
+    "size_bytes": 12452
+  },
+  "source_metadata/vegetation.xml": {
+    "sha256": "a587e311bf0a0f56ceb4a8b9a5b6b961efaaad4da9f5dd0f4f85508cd4908fd7",
+    "size_bytes": 28949
+  },
+  "source_notes.json": {
+    "sha256": "ab03828cfd0a8a131efb4fd84642329090d07d59edf22bf1090e0ebbbce45738",
+    "size_bytes": 1111
+  },
+  "source_paths.example.json": {
+    "sha256": "71f88da21011bd9e6219fec87956cad4c62d9735ab9e01f86c64dca71e4bda01",
+    "size_bytes": 232
+  },
+  "taxonomy.json": {
+    "sha256": "a0a89322e3286861fea4e9791c225bffc9b973497e6c5045a8155f17346d058d",
+    "size_bytes": 289457
+  },
+  "test_context.py": {
+    "sha256": "5ddba8e3135f93cf4590b5efb2ddad92e485910aecf63402ba44767ec6ba3bb9",
+    "size_bytes": 5083
+  },
+  "unit-test-results.txt": {
+    "sha256": "ab03d28fffb8101e1f0c1bae6a5b02cbf27e56be39b8469f7ad99218b60d7133",
+    "size_bytes": 949
+  },
+  "validation.json": {
+    "sha256": "a1f3a63c2a95139b17b826ef360a5e58573d3e4209e1340b80d23331c1bc4a23",
+    "size_bytes": 13720
+  }
+}

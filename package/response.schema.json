@@ -1,0 +1,1201 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CONUS simulation landscape context v1",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "conus-scene-context-v1"
+    },
+    "selection": {
+      "type": "object",
+      "properties": {
+        "longitude": {
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180
+        },
+        "latitude": {
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90
+        }
+      },
+      "required": [
+        "longitude",
+        "latitude"
+      ],
+      "additionalProperties": false
+    },
+    "mode": {
+      "enum": [
+        "national_cell",
+        "local_patch"
+      ]
+    },
+    "status": {
+      "enum": [
+        "ok",
+        "outside_conus",
+        "no_landcover_data"
+      ]
+    },
+    "source_edition": {
+      "type": "object",
+      "properties": {
+        "vegetation": {
+          "const": 2020
+        },
+        "terrain_product": {
+          "const": 2020
+        }
+      },
+      "required": [
+        "vegetation",
+        "terrain_product"
+      ],
+      "additionalProperties": false
+    },
+    "dynamic_inputs_included": {
+      "const": false
+    },
+    "layout": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "crs": {
+              "const": "EPSG:5070"
+            },
+            "origin_upper_left_m": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 2,
+              "items": {
+                "type": "number"
+              }
+            },
+            "axis_order": {
+              "type": "string"
+            },
+            "width": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100
+            },
+            "height": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100
+            },
+            "cell_size_m": {
+              "type": "integer",
+              "minimum": 30
+            },
+            "class_codes": {
+              "type": "object",
+              "properties": {
+                "0": {
+                  "const": "unknown"
+                },
+                "1": {
+                  "const": "forest_woodland"
+                },
+                "2": {
+                  "const": "shrubland"
+                },
+                "3": {
+                  "const": "grass_herbaceous"
+                },
+                "4": {
+                  "const": "agriculture"
+                },
+                "5": {
+                  "const": "developed"
+                },
+                "6": {
+                  "const": "open_water"
+                },
+                "7": {
+                  "const": "sparse_barren"
+                },
+                "8": {
+                  "const": "snow_ice"
+                }
+              },
+              "required": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8"
+              ],
+              "additionalProperties": false
+            },
+            "dominant_cover": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 100,
+              "items": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 100,
+                "items": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 8
+                }
+              }
+            },
+            "cover_fraction": {
+              "type": "object",
+              "properties": {
+                "forest_woodland": {
+                  "type": "array",
+                  "minItems": 1,
+                  "maxItems": 100,
+                  "items": {
+                    "type": "array",
+                    "minItems": 1,
+                    "maxItems": 100,
+                    "items": {
+                      "type": [
+                        "number",
+                        "null"
+                      ],
+                      "minimum": 0,
+                      "maximum": 1
+                    }
+                  }
+                },
+                "shrubland": {
+                  "type": "array",
+                  "minItems": 1,
+                  "maxItems": 100,
+                  "items": {
+                    "type": "array",
+                    "minItems": 1,
+                    "maxItems": 100,
+                    "items": {
+                      "type": [
+                        "number",
+                        "null"
+                      ],
+                      "minimum": 0,
+                      "maximum": 1
+                    }
+                  }
+                },
+                "grass_herbaceous": {
+                  "type": "array",
+                  "minItems": 1,
+                  "maxItems": 100,
+                  "items": {
+                    "type": "array",
+                    "minItems": 1,
+                    "maxItems": 100,
+                    "items": {
+                      "type": [
+                        "number",
+                        "null"
+                      ],
+                      "minimum": 0,
+                      "maximum": 1
+                    }
+                  }
+                },
+                "agriculture": {
+                  "type": "array",
+                  "minItems": 1,
+                  "maxItems": 100,
+                  "items": {
+                    "type": "array",
+                    "minItems": 1,
+                    "maxItems": 100,
+                    "items": {
+                      "type": [
+                        "number",
+                        "null"
+                      ],
+                      "minimum": 0,
+                      "maximum": 1
+                    }
+                  }
+                },
+                "developed": {
+                  "type": "array",
+                  "minItems": 1,
+                  "maxItems": 100,
+                  "items": {
+                    "type": "array",
+                    "minItems": 1,
+                    "maxItems": 100,
+                    "items": {
+                      "type": [
+                        "number",
+                        "null"
+                      ],
+                      "minimum": 0,
+                      "maximum": 1
+                    }
+                  }
+                },
+                "open_water": {
+                  "type": "array",
+                  "minItems": 1,
+                  "maxItems": 100,
+                  "items": {
+                    "type": "array",
+                    "minItems": 1,
+                    "maxItems": 100,
+                    "items": {
+                      "type": [
+                        "number",
+                        "null"
+                      ],
+                      "minimum": 0,
+                      "maximum": 1
+                    }
+                  }
+                },
+                "sparse_barren": {
+                  "type": "array",
+                  "minItems": 1,
+                  "maxItems": 100,
+                  "items": {
+                    "type": "array",
+                    "minItems": 1,
+                    "maxItems": 100,
+                    "items": {
+                      "type": [
+                        "number",
+                        "null"
+                      ],
+                      "minimum": 0,
+                      "maximum": 1
+                    }
+                  }
+                },
+                "snow_ice": {
+                  "type": "array",
+                  "minItems": 1,
+                  "maxItems": 100,
+                  "items": {
+                    "type": "array",
+                    "minItems": 1,
+                    "maxItems": 100,
+                    "items": {
+                      "type": [
+                        "number",
+                        "null"
+                      ],
+                      "minimum": 0,
+                      "maximum": 1
+                    }
+                  }
+                }
+              },
+              "required": [
+                "forest_woodland",
+                "shrubland",
+                "grass_herbaceous",
+                "agriculture",
+                "developed",
+                "open_water",
+                "sparse_barren",
+                "snow_ice"
+              ],
+              "additionalProperties": false
+            },
+            "known_cover_fraction": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 100,
+              "items": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 100,
+                "items": {
+                  "type": [
+                    "number",
+                    "null"
+                  ],
+                  "minimum": 0,
+                  "maximum": 1
+                }
+              }
+            },
+            "conus_fraction": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 100,
+              "items": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 100,
+                "items": {
+                  "type": [
+                    "number",
+                    "null"
+                  ],
+                  "minimum": 0,
+                  "maximum": 1
+                }
+              }
+            },
+            "elevation_mean_m": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 100,
+              "items": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 100,
+                "items": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                }
+              }
+            },
+            "slope_mean_degrees": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 100,
+              "items": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 100,
+                "items": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                }
+              }
+            }
+          },
+          "required": [
+            "crs",
+            "origin_upper_left_m",
+            "axis_order",
+            "width",
+            "height",
+            "cell_size_m",
+            "class_codes",
+            "dominant_cover",
+            "cover_fraction",
+            "known_cover_fraction",
+            "conus_fraction",
+            "elevation_mean_m",
+            "slope_mean_degrees"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "composition": {
+      "type": "object",
+      "properties": {
+        "forest_woodland": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "shrubland": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "grass_herbaceous": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "agriculture": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "developed": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "open_water": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "sparse_barren": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "snow_ice": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "required": [
+        "forest_woodland",
+        "shrubland",
+        "grass_herbaceous",
+        "agriculture",
+        "developed",
+        "open_water",
+        "sparse_barren",
+        "snow_ice"
+      ],
+      "additionalProperties": false
+    },
+    "tags": {
+      "type": "object",
+      "properties": {
+        "riparian_wetland_vegetation": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "desert_named_ecosystem": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "developed_vegetation": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "required": [
+        "riparian_wetland_vegetation",
+        "desert_named_ecosystem",
+        "developed_vegetation"
+      ],
+      "additionalProperties": false
+    },
+    "coverage": {
+      "type": "object",
+      "properties": {
+        "native_pixel_area_m2": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "footprint_area_m2": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "in_conus_area_m2": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "mapped_cover_area_m2": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "unknown_cover_area_m2": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "conus_fraction_of_footprint": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "cover_fraction_of_conus": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "elevation_fraction_of_conus": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "slope_fraction_of_conus": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "required": [
+        "native_pixel_area_m2",
+        "footprint_area_m2",
+        "in_conus_area_m2",
+        "mapped_cover_area_m2",
+        "unknown_cover_area_m2",
+        "conus_fraction_of_footprint",
+        "cover_fraction_of_conus",
+        "elevation_fraction_of_conus",
+        "slope_fraction_of_conus"
+      ],
+      "additionalProperties": false
+    },
+    "terrain": {
+      "type": "object",
+      "properties": {
+        "descriptor": {
+          "enum": [
+            "flat",
+            "rolling",
+            "hilly",
+            "rugged",
+            "unknown"
+          ]
+        },
+        "elevation_mean_m": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "elevation_min_m": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "elevation_max_m": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "relief_m": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "slope_mean_degrees": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "slope_at_least_15_degrees_fraction": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "required": [
+        "descriptor",
+        "elevation_mean_m",
+        "elevation_min_m",
+        "elevation_max_m",
+        "relief_m",
+        "slope_mean_degrees",
+        "slope_at_least_15_degrees_fraction"
+      ],
+      "additionalProperties": false
+    },
+    "footprint": {
+      "type": "object",
+      "properties": {
+        "crs": {
+          "const": "EPSG:5070"
+        },
+        "bounds_m": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 4,
+          "maxItems": 4
+        },
+        "size_m": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "bbox_wgs84": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 4,
+          "maxItems": 4
+        },
+        "polygon_wgs84": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "Polygon"
+            },
+            "coordinates": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 1,
+              "items": {
+                "type": "array",
+                "minItems": 5,
+                "maxItems": 5,
+                "items": {
+                  "type": "array",
+                  "minItems": 2,
+                  "maxItems": 2,
+                  "items": {
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          },
+          "required": [
+            "type",
+            "coordinates"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "crs",
+        "bounds_m",
+        "size_m",
+        "bbox_wgs84",
+        "polygon_wgs84"
+      ],
+      "additionalProperties": false
+    },
+    "scene_components": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "forest_woodland",
+          "shrubland",
+          "grass_herbaceous",
+          "agriculture",
+          "developed",
+          "open_water",
+          "sparse_barren",
+          "snow_ice"
+        ]
+      }
+    },
+    "dominant_cover": {
+      "enum": [
+        null,
+        "forest_woodland",
+        "shrubland",
+        "grass_herbaceous",
+        "agriculture",
+        "developed",
+        "open_water",
+        "sparse_barren",
+        "snow_ice"
+      ]
+    },
+    "composition_is_mixed": {
+      "type": "boolean"
+    },
+    "lookup_support": {
+      "type": "string"
+    },
+    "native_pixel_size_m": {
+      "const": 30
+    },
+    "requested_width_m": {
+      "type": "integer",
+      "minimum": 300,
+      "maximum": 6000
+    },
+    "cell_id": {
+      "type": "string",
+      "pattern": "^c3k-r[0-9]+-c[0-9]+$"
+    },
+    "reason": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "selection",
+    "mode",
+    "status",
+    "source_edition",
+    "dynamic_inputs_included",
+    "layout"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "outside_conus"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "reason"
+        ],
+        "properties": {
+          "layout": {
+            "type": "null"
+          }
+        }
+      },
+      "else": {
+        "required": [
+          "composition",
+          "tags",
+          "coverage",
+          "terrain",
+          "footprint",
+          "scene_components",
+          "dominant_cover",
+          "composition_is_mixed",
+          "lookup_support",
+          "native_pixel_size_m"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mode": {
+            "const": "national_cell"
+          },
+          "status": {
+            "enum": [
+              "ok",
+              "no_landcover_data"
+            ]
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "cell_id"
+        ],
+        "properties": {
+          "layout": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mode": {
+            "const": "local_patch"
+          },
+          "status": {
+            "enum": [
+              "ok",
+              "no_landcover_data"
+            ]
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "requested_width_m"
+        ],
+        "properties": {
+          "layout": {
+            "type": "object",
+            "properties": {
+              "crs": {
+                "const": "EPSG:5070"
+              },
+              "origin_upper_left_m": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 2,
+                "items": {
+                  "type": "number"
+                }
+              },
+              "axis_order": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 100
+              },
+              "height": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 100
+              },
+              "cell_size_m": {
+                "type": "integer",
+                "minimum": 30
+              },
+              "class_codes": {
+                "type": "object",
+                "properties": {
+                  "0": {
+                    "const": "unknown"
+                  },
+                  "1": {
+                    "const": "forest_woodland"
+                  },
+                  "2": {
+                    "const": "shrubland"
+                  },
+                  "3": {
+                    "const": "grass_herbaceous"
+                  },
+                  "4": {
+                    "const": "agriculture"
+                  },
+                  "5": {
+                    "const": "developed"
+                  },
+                  "6": {
+                    "const": "open_water"
+                  },
+                  "7": {
+                    "const": "sparse_barren"
+                  },
+                  "8": {
+                    "const": "snow_ice"
+                  }
+                },
+                "required": [
+                  "0",
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5",
+                  "6",
+                  "7",
+                  "8"
+                ],
+                "additionalProperties": false
+              },
+              "dominant_cover": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 100,
+                "items": {
+                  "type": "array",
+                  "minItems": 1,
+                  "maxItems": 100,
+                  "items": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 8
+                  }
+                }
+              },
+              "cover_fraction": {
+                "type": "object",
+                "properties": {
+                  "forest_woodland": {
+                    "type": "array",
+                    "minItems": 1,
+                    "maxItems": 100,
+                    "items": {
+                      "type": "array",
+                      "minItems": 1,
+                      "maxItems": 100,
+                      "items": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "minimum": 0,
+                        "maximum": 1
+                      }
+                    }
+                  },
+                  "shrubland": {
+                    "type": "array",
+                    "minItems": 1,
+                    "maxItems": 100,
+                    "items": {
+                      "type": "array",
+                      "minItems": 1,
+                      "maxItems": 100,
+                      "items": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "minimum": 0,
+                        "maximum": 1
+                      }
+                    }
+                  },
+                  "grass_herbaceous": {
+                    "type": "array",
+                    "minItems": 1,
+                    "maxItems": 100,
+                    "items": {
+                      "type": "array",
+                      "minItems": 1,
+                      "maxItems": 100,
+                      "items": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "minimum": 0,
+                        "maximum": 1
+                      }
+                    }
+                  },
+                  "agriculture": {
+                    "type": "array",
+                    "minItems": 1,
+                    "maxItems": 100,
+                    "items": {
+                      "type": "array",
+                      "minItems": 1,
+                      "maxItems": 100,
+                      "items": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "minimum": 0,
+                        "maximum": 1
+                      }
+                    }
+                  },
+                  "developed": {
+                    "type": "array",
+                    "minItems": 1,
+                    "maxItems": 100,
+                    "items": {
+                      "type": "array",
+                      "minItems": 1,
+                      "maxItems": 100,
+                      "items": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "minimum": 0,
+                        "maximum": 1
+                      }
+                    }
+                  },
+                  "open_water": {
+                    "type": "array",
+                    "minItems": 1,
+                    "maxItems": 100,
+                    "items": {
+                      "type": "array",
+                      "minItems": 1,
+                      "maxItems": 100,
+                      "items": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "minimum": 0,
+                        "maximum": 1
+                      }
+                    }
+                  },
+                  "sparse_barren": {
+                    "type": "array",
+                    "minItems": 1,
+                    "maxItems": 100,
+                    "items": {
+                      "type": "array",
+                      "minItems": 1,
+                      "maxItems": 100,
+                      "items": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "minimum": 0,
+                        "maximum": 1
+                      }
+                    }
+                  },
+                  "snow_ice": {
+                    "type": "array",
+                    "minItems": 1,
+                    "maxItems": 100,
+                    "items": {
+                      "type": "array",
+                      "minItems": 1,
+                      "maxItems": 100,
+                      "items": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "minimum": 0,
+                        "maximum": 1
+                      }
+                    }
+                  }
+                },
+                "required": [
+                  "forest_woodland",
+                  "shrubland",
+                  "grass_herbaceous",
+                  "agriculture",
+                  "developed",
+                  "open_water",
+                  "sparse_barren",
+                  "snow_ice"
+                ],
+                "additionalProperties": false
+              },
+              "known_cover_fraction": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 100,
+                "items": {
+                  "type": "array",
+                  "minItems": 1,
+                  "maxItems": 100,
+                  "items": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "minimum": 0,
+                    "maximum": 1
+                  }
+                }
+              },
+              "conus_fraction": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 100,
+                "items": {
+                  "type": "array",
+                  "minItems": 1,
+                  "maxItems": 100,
+                  "items": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "minimum": 0,
+                    "maximum": 1
+                  }
+                }
+              },
+              "elevation_mean_m": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 100,
+                "items": {
+                  "type": "array",
+                  "minItems": 1,
+                  "maxItems": 100,
+                  "items": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  }
+                }
+              },
+              "slope_mean_degrees": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 100,
+                "items": {
+                  "type": "array",
+                  "minItems": 1,
+                  "maxItems": 100,
+                  "items": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  }
+                }
+              }
+            },
+            "required": [
+              "crs",
+              "origin_upper_left_m",
+              "axis_order",
+              "width",
+              "height",
+              "cell_size_m",
+              "class_codes",
+              "dominant_cover",
+              "cover_fraction",
+              "known_cover_fraction",
+              "conus_fraction",
+              "elevation_mean_m",
+              "slope_mean_degrees"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    }
+  ]
+}

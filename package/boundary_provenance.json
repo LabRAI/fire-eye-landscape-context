@@ -1,0 +1,47 @@
+{
+  "method": "Dissolve the 67 supplied LANDFIRE conus_0k polygons and transform to WGS84; no simplification or invented buffer.",
+  "source_files": {
+    "conus_0k.sbn": {
+      "size_bytes": 836,
+      "sha256": "35e55ff6ea939cc443939e762816e2f0a88ae6fae3c30b0d8c988a6fa2839d9e"
+    },
+    "conus_0k.shp.xml": {
+      "size_bytes": 181600,
+      "sha256": "b950695296596d308de178967ff2cdf9c9766572f08ef104d7f4de8fc1a13af2"
+    },
+    "conus_0k.dbf": {
+      "size_bytes": 41792,
+      "sha256": "d31ba07bca51b27581a7e985705714fb837e55c2110d01c6f631d70af1fd13c1"
+    },
+    "conus_0k.shx": {
+      "size_bytes": 636,
+      "sha256": "b7954a89adbca0731638ab342dca78e69c3125e762f4bb6172b43189f43e7cd1"
+    },
+    "conus_0k.prj": {
+      "size_bytes": 459,
+      "sha256": "b38f60752e2672fe3d20e368065b9abb82aa164bdbee1dc52b32a8b85149028a"
+    },
+    "conus_0k.cpg": {
+      "size_bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    "conus_0k.shp": {
+      "size_bytes": 4292252,
+      "sha256": "42028e230360d458e552a1315b15afa3ba299d7589932411fb26cbe696025c1a"
+    },
+    "conus_0k.sbx": {
+      "size_bytes": 196,
+      "sha256": "3867ed97a232ea95d4405f707ca445ad4542e6fd80d5ea8031bc1d7333c43f7a"
+    }
+  },
+  "output_sha256": "7efbba593dd6a43da332c5217c42bfe8efbb7595282564cdc38731c4c4477e19",
+  "checks": {
+    "key_west": true,
+    "tampa": true,
+    "cape_hatteras": true,
+    "montauk": true,
+    "tallahassee": true,
+    "open_atlantic": false
+  },
+  "limitation": "Source-product geographic extent, not a surveyed coastline or current jurisdiction boundary."
+}

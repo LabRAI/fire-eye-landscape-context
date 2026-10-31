@@ -1,0 +1,15 @@
+{
+  "publication_dates": {
+    "vegetation": "2022-06-01",
+    "elevation": "2022-01-31",
+    "slope": "2022-01-31"
+  },
+  "vegetation_edition_note": "LANDFIRE 2020 retains circa-2016 EVT labels except specified urban, disturbance, agriculture and developed-ruderal updates. It is not a 2026 survey.",
+  "terrain_note": "The 2020-labelled terrain products were prepared in late 2021 and published in 2022. Source terrain metadata records zero-filled nodata in some coastal-buffer areas; zero elevation/slope is not independently verified as flat terrain.",
+  "coverage_note": "Reported coverage measures valid source pixels inside the LANDFIRE unbuffered CONUS geographic extent, not field validation or environmental accuracy. The source boundary replaces a simplified model-domain outline that excluded some coastal locations.",
+  "metadata_sha256": {
+    "vegetation": "a587e311bf0a0f56ceb4a8b9a5b6b961efaaad4da9f5dd0f4f85508cd4908fd7",
+    "elevation": "990929c215f1a69bfa7763e9517ad77796707ab42bec98e4e97d49bd13d22e24",
+    "slope": "5bb7599ae1188c44a65a2e4df015c8fe4be753850ddd8026e9639ae087a1c3f1"
+  }
+}

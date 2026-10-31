@@ -1,0 +1,12 @@
+test_aligned_sources_preserve_layout_and_nodata (test_context.ContextTests.test_aligned_sources_preserve_layout_and_nodata) ... ok
+test_empty_coverage_keeps_null (test_context.ContextTests.test_empty_coverage_keeps_null) ... ok
+test_nonfinite_and_swapped_coordinates_rejected (test_context.ContextTests.test_nonfinite_and_swapped_coordinates_rejected) ... ok
+test_orchard_is_agriculture_not_natural_forest (test_context.ContextTests.test_orchard_is_agriculture_not_natural_forest) ... ok
+test_riparian_forest_remains_forest (test_context.ContextTests.test_riparian_forest_remains_forest) ... ok
+test_terrain_uses_relief_not_absolute_elevation (test_context.ContextTests.test_terrain_uses_relief_not_absolute_elevation) ... ok
+test_unsigned_sort_and_unknown_are_not_grass (test_context.ContextTests.test_unsigned_sort_and_unknown_are_not_grass) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.037s
+
+OK

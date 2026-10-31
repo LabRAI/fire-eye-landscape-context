@@ -1,0 +1,7 @@
+/package/conus_cells.csv.gz
+/package/conus_context.npz
+__pycache__/
+*.py[cod]
+.venv/
+scene.json
+.DS_Store

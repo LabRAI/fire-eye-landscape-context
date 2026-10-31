@@ -1,0 +1,104 @@
+{
+  "schema_version": "conus-scene-context-v1",
+  "selection": {
+    "longitude": -93.5,
+    "latitude": 42.1
+  },
+  "mode": "national_cell",
+  "status": "ok",
+  "source_edition": {
+    "vegetation": 2020,
+    "terrain_product": 2020
+  },
+  "dynamic_inputs_included": false,
+  "layout": null,
+  "composition": {
+    "forest_woodland": 0.007,
+    "shrubland": 0.0009,
+    "grass_herbaceous": 0.023,
+    "agriculture": 0.9234,
+    "developed": 0.0438,
+    "open_water": 0.0019,
+    "sparse_barren": 0.0,
+    "snow_ice": 0.0
+  },
+  "tags": {
+    "riparian_wetland_vegetation": 0.0037,
+    "desert_named_ecosystem": 0.0,
+    "developed_vegetation": 0.0053
+  },
+  "coverage": {
+    "native_pixel_area_m2": 900,
+    "footprint_area_m2": 9000000,
+    "in_conus_area_m2": 9000000,
+    "mapped_cover_area_m2": 9000000,
+    "conus_fraction_of_footprint": 1.0,
+    "cover_fraction_of_conus": 1.0,
+    "elevation_fraction_of_conus": 1.0,
+    "slope_fraction_of_conus": 1.0,
+    "unknown_cover_area_m2": 0
+  },
+  "terrain": {
+    "descriptor": "flat",
+    "elevation_mean_m": 312.47,
+    "elevation_min_m": 300.0,
+    "elevation_max_m": 324.0,
+    "relief_m": 24.0,
+    "slope_mean_degrees": 1.27,
+    "slope_at_least_15_degrees_fraction": 0.0
+  },
+  "scene_components": [
+    "agriculture"
+  ],
+  "dominant_cover": "agriculture",
+  "composition_is_mixed": false,
+  "cell_id": "c3k-r380-c855",
+  "footprint": {
+    "crs": "EPSG:5070",
+    "bounds_m": [
+      202604.99999999814,
+      2124405.0000000037,
+      205604.99999999814,
+      2127405.0000000037
+    ],
+    "size_m": [
+      3000,
+      3000
+    ],
+    "polygon_wgs84": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -93.53255198,
+            42.12393131
+          ],
+          [
+            -93.49603292,
+            42.12322981
+          ],
+          [
+            -93.49699498,
+            42.09641696
+          ],
+          [
+            -93.53350002,
+            42.09711817
+          ],
+          [
+            -93.53255198,
+            42.12393131
+          ]
+        ]
+      ]
+    },
+    "bbox_wgs84": [
+      -93.53350002227731,
+      42.09641696097761,
+      -93.49603292392759,
+      42.123931312481005
+    ]
+  },
+  "lookup_support": "Containing 3 km cell; percentages are regional context, not target-pixel or 200 m scene fractions.",
+  "native_pixel_size_m": 30
+}

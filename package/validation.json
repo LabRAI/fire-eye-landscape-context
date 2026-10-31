@@ -1,0 +1,541 @@
+{
+  "schema_responses_checked": 35,
+  "independent_native_cell_rechecks": [
+    [
+      638,
+      604
+    ],
+    [
+      111,
+      255
+    ],
+    [
+      545,
+      957
+    ],
+    [
+      437,
+      1243
+    ],
+    [
+      381,
+      289
+    ],
+    [
+      656,
+      853
+    ],
+    [
+      365,
+      565
+    ],
+    [
+      93,
+      1478
+    ],
+    [
+      547,
+      573
+    ],
+    [
+      517,
+      1000
+    ],
+    [
+      366,
+      285
+    ],
+    [
+      649,
+      919
+    ],
+    [
+      309,
+      762
+    ],
+    [
+      765,
+      648
+    ],
+    [
+      492,
+      339
+    ],
+    [
+      529,
+      914
+    ],
+    [
+      480,
+      843
+    ],
+    [
+      843,
+      538
+    ],
+    [
+      890,
+      1281
+    ],
+    [
+      585,
+      1175
+    ],
+    [
+      357,
+      211
+    ],
+    [
+      873,
+      655
+    ],
+    [
+      374,
+      439
+    ],
+    [
+      189,
+      328
+    ]
+  ],
+  "all_rechecks_exact": true,
+  "source_grid_alignment_checked": true,
+  "composition_and_coverage_checked": true,
+  "layout_dimensions_and_cell_fractions_checked": true,
+  "outside_conus_rejected": true,
+  "coastal_regression_checks": [
+    {
+      "name": "key_west",
+      "longitude": -81.78,
+      "latitude": 24.5551,
+      "status": "ok",
+      "cell_id": "c3k-r996-c1272"
+    },
+    {
+      "name": "cape_hatteras",
+      "longitude": -75.526,
+      "latitude": 35.25,
+      "status": "ok",
+      "cell_id": "c3k-r571-c1398"
+    },
+    {
+      "name": "montauk",
+      "longitude": -71.945,
+      "latitude": 41.035,
+      "status": "ok",
+      "cell_id": "c3k-r337-c1449"
+    }
+  ],
+  "csv_rows": 901703,
+  "examples": [
+    {
+      "name": "tallahassee_urban_woodland",
+      "longitude": -84.28,
+      "latitude": 30.45,
+      "terrain": "flat",
+      "composition": {
+        "forest_woodland": 0.2278,
+        "shrubland": 0.0333,
+        "grass_herbaceous": 0.0183,
+        "agriculture": 0.0002,
+        "developed": 0.7155,
+        "open_water": 0.0049,
+        "sparse_barren": 0.0,
+        "snow_ice": 0.0
+      },
+      "tags": {
+        "riparian_wetland_vegetation": 0.0001,
+        "desert_named_ecosystem": 0.0,
+        "developed_vegetation": 0.2709
+      },
+      "coverage": {
+        "native_pixel_area_m2": 900,
+        "footprint_area_m2": 9000000,
+        "in_conus_area_m2": 9000000,
+        "mapped_cover_area_m2": 9000000,
+        "conus_fraction_of_footprint": 1.0,
+        "cover_fraction_of_conus": 1.0,
+        "elevation_fraction_of_conus": 1.0,
+        "slope_fraction_of_conus": 1.0,
+        "unknown_cover_area_m2": 0
+      },
+      "local_seconds": 0.0676,
+      "national_cell": "c3k-r792-c1160"
+    },
+    {
+      "name": "boulder_foothills",
+      "longitude": -105.2797,
+      "latitude": 39.9904,
+      "terrain": "rugged",
+      "composition": {
+        "forest_woodland": 0.4324,
+        "shrubland": 0.0957,
+        "grass_herbaceous": 0.1561,
+        "agriculture": 0.0015,
+        "developed": 0.3043,
+        "open_water": 0.0,
+        "sparse_barren": 0.01,
+        "snow_ice": 0.0
+      },
+      "tags": {
+        "riparian_wetland_vegetation": 0.0101,
+        "desert_named_ecosystem": 0.0005,
+        "developed_vegetation": 0.0985
+      },
+      "coverage": {
+        "native_pixel_area_m2": 900,
+        "footprint_area_m2": 9000000,
+        "in_conus_area_m2": 9000000,
+        "mapped_cover_area_m2": 9000000,
+        "conus_fraction_of_footprint": 1.0,
+        "cover_fraction_of_conus": 1.0,
+        "elevation_fraction_of_conus": 1.0,
+        "slope_fraction_of_conus": 1.0,
+        "unknown_cover_area_m2": 0
+      },
+      "local_seconds": 0.0806,
+      "national_cell": "c3k-r447-c526"
+    },
+    {
+      "name": "yosemite_valley_area",
+      "longitude": -119.593,
+      "latitude": 37.745,
+      "terrain": "rugged",
+      "composition": {
+        "forest_woodland": 0.5414,
+        "shrubland": 0.1152,
+        "grass_herbaceous": 0.0747,
+        "agriculture": 0.0,
+        "developed": 0.0605,
+        "open_water": 0.0642,
+        "sparse_barren": 0.144,
+        "snow_ice": 0.0
+      },
+      "tags": {
+        "riparian_wetland_vegetation": 0.1392,
+        "desert_named_ecosystem": 0.0,
+        "developed_vegetation": 0.0534
+      },
+      "coverage": {
+        "native_pixel_area_m2": 900,
+        "footprint_area_m2": 9000000,
+        "in_conus_area_m2": 9000000,
+        "mapped_cover_area_m2": 9000000,
+        "conus_fraction_of_footprint": 1.0,
+        "cover_fraction_of_conus": 1.0,
+        "elevation_fraction_of_conus": 1.0,
+        "slope_fraction_of_conus": 1.0,
+        "unknown_cover_area_m2": 0
+      },
+      "local_seconds": 0.0693,
+      "national_cell": "c3k-r459-c108"
+    },
+    {
+      "name": "flint_hills_mixed_landscape",
+      "longitude": -96.6,
+      "latitude": 38.4,
+      "terrain": "rolling",
+      "composition": {
+        "forest_woodland": 0.0423,
+        "shrubland": 0.0036,
+        "grass_herbaceous": 0.3066,
+        "agriculture": 0.5923,
+        "developed": 0.0334,
+        "open_water": 0.0218,
+        "sparse_barren": 0.0,
+        "snow_ice": 0.0
+      },
+      "tags": {
+        "riparian_wetland_vegetation": 0.0577,
+        "desert_named_ecosystem": 0.0,
+        "developed_vegetation": 0.0258
+      },
+      "coverage": {
+        "native_pixel_area_m2": 900,
+        "footprint_area_m2": 9000000,
+        "in_conus_area_m2": 9000000,
+        "mapped_cover_area_m2": 9000000,
+        "conus_fraction_of_footprint": 1.0,
+        "cover_fraction_of_conus": 1.0,
+        "elevation_fraction_of_conus": 1.0,
+        "slope_fraction_of_conus": 1.0,
+        "unknown_cover_area_m2": 0
+      },
+      "local_seconds": 0.0668,
+      "national_cell": "c3k-r519-c770"
+    },
+    {
+      "name": "central_iowa",
+      "longitude": -93.5,
+      "latitude": 42.1,
+      "terrain": "flat",
+      "composition": {
+        "forest_woodland": 0.0018,
+        "shrubland": 0.0012,
+        "grass_herbaceous": 0.0153,
+        "agriculture": 0.9387,
+        "developed": 0.043,
+        "open_water": 0.0,
+        "sparse_barren": 0.0,
+        "snow_ice": 0.0
+      },
+      "tags": {
+        "riparian_wetland_vegetation": 0.0,
+        "desert_named_ecosystem": 0.0,
+        "developed_vegetation": 0.0066
+      },
+      "coverage": {
+        "native_pixel_area_m2": 900,
+        "footprint_area_m2": 9000000,
+        "in_conus_area_m2": 9000000,
+        "mapped_cover_area_m2": 9000000,
+        "conus_fraction_of_footprint": 1.0,
+        "cover_fraction_of_conus": 1.0,
+        "elevation_fraction_of_conus": 1.0,
+        "slope_fraction_of_conus": 1.0,
+        "unknown_cover_area_m2": 0
+      },
+      "local_seconds": 0.0649,
+      "national_cell": "c3k-r380-c855"
+    },
+    {
+      "name": "memphis_riverfront",
+      "longitude": -90.07,
+      "latitude": 35.15,
+      "terrain": "flat",
+      "composition": {
+        "forest_woodland": 0.0496,
+        "shrubland": 0.0035,
+        "grass_herbaceous": 0.0368,
+        "agriculture": 0.2943,
+        "developed": 0.1579,
+        "open_water": 0.4579,
+        "sparse_barren": 0.0,
+        "snow_ice": 0.0
+      },
+      "tags": {
+        "riparian_wetland_vegetation": 0.0505,
+        "desert_named_ecosystem": 0.0,
+        "developed_vegetation": 0.0106
+      },
+      "coverage": {
+        "native_pixel_area_m2": 900,
+        "footprint_area_m2": 9000000,
+        "in_conus_area_m2": 9000000,
+        "mapped_cover_area_m2": 9000000,
+        "conus_fraction_of_footprint": 1.0,
+        "cover_fraction_of_conus": 1.0,
+        "elevation_fraction_of_conus": 1.0,
+        "slope_fraction_of_conus": 1.0,
+        "unknown_cover_area_m2": 0
+      },
+      "local_seconds": 0.0648,
+      "national_cell": "c3k-r635-c965"
+    },
+    {
+      "name": "new_york_central_park_area",
+      "longitude": -73.97,
+      "latitude": 40.78,
+      "terrain": "flat",
+      "composition": {
+        "forest_woodland": 0.1251,
+        "shrubland": 0.0032,
+        "grass_herbaceous": 0.0366,
+        "agriculture": 0.0008,
+        "developed": 0.7488,
+        "open_water": 0.0855,
+        "sparse_barren": 0.0,
+        "snow_ice": 0.0
+      },
+      "tags": {
+        "riparian_wetland_vegetation": 0.0001,
+        "desert_named_ecosystem": 0.0,
+        "developed_vegetation": 0.15
+      },
+      "coverage": {
+        "native_pixel_area_m2": 900,
+        "footprint_area_m2": 9000000,
+        "in_conus_area_m2": 9000000,
+        "mapped_cover_area_m2": 9000000,
+        "conus_fraction_of_footprint": 1.0,
+        "cover_fraction_of_conus": 1.0,
+        "elevation_fraction_of_conus": 1.0,
+        "slope_fraction_of_conus": 1.0,
+        "unknown_cover_area_m2": 0
+      },
+      "local_seconds": 0.0652,
+      "national_cell": "c3k-r360-c1396"
+    },
+    {
+      "name": "mojave_desert_area",
+      "longitude": -116.15,
+      "latitude": 34.1,
+      "terrain": "hilly",
+      "composition": {
+        "forest_woodland": 0.0001,
+        "shrubland": 0.9677,
+        "grass_herbaceous": 0.0027,
+        "agriculture": 0.0,
+        "developed": 0.0295,
+        "open_water": 0.0,
+        "sparse_barren": 0.0,
+        "snow_ice": 0.0
+      },
+      "tags": {
+        "riparian_wetland_vegetation": 0.0006,
+        "desert_named_ecosystem": 0.9591,
+        "developed_vegetation": 0.0113
+      },
+      "coverage": {
+        "native_pixel_area_m2": 900,
+        "footprint_area_m2": 9000000,
+        "in_conus_area_m2": 9000000,
+        "mapped_cover_area_m2": 9000000,
+        "conus_fraction_of_footprint": 1.0,
+        "cover_fraction_of_conus": 1.0,
+        "elevation_fraction_of_conus": 1.0,
+        "slope_fraction_of_conus": 1.0,
+        "unknown_cover_area_m2": 0
+      },
+      "local_seconds": 0.0678,
+      "national_cell": "c3k-r615-c176"
+    },
+    {
+      "name": "everglades_area",
+      "longitude": -80.714,
+      "latitude": 25.415,
+      "terrain": "flat",
+      "composition": {
+        "forest_woodland": 0.6201,
+        "shrubland": 0.0162,
+        "grass_herbaceous": 0.3584,
+        "agriculture": 0.0015,
+        "developed": 0.0,
+        "open_water": 0.0038,
+        "sparse_barren": 0.0,
+        "snow_ice": 0.0
+      },
+      "tags": {
+        "riparian_wetland_vegetation": 0.327,
+        "desert_named_ecosystem": 0.0,
+        "developed_vegetation": 0.0
+      },
+      "coverage": {
+        "native_pixel_area_m2": 900,
+        "footprint_area_m2": 9000000,
+        "in_conus_area_m2": 9000000,
+        "mapped_cover_area_m2": 9000000,
+        "conus_fraction_of_footprint": 1.0,
+        "cover_fraction_of_conus": 1.0,
+        "elevation_fraction_of_conus": 1.0,
+        "slope_fraction_of_conus": 1.0,
+        "unknown_cover_area_m2": 0
+      },
+      "local_seconds": 0.0655,
+      "national_cell": "c3k-r959-c1303"
+    },
+    {
+      "name": "mount_rainier_area",
+      "longitude": -121.76,
+      "latitude": 46.85,
+      "terrain": "rugged",
+      "composition": {
+        "forest_woodland": 0.0,
+        "shrubland": 0.0,
+        "grass_herbaceous": 0.0,
+        "agriculture": 0.0,
+        "developed": 0.0,
+        "open_water": 0.0,
+        "sparse_barren": 0.147,
+        "snow_ice": 0.853
+      },
+      "tags": {
+        "riparian_wetland_vegetation": 0.0,
+        "desert_named_ecosystem": 0.0,
+        "developed_vegetation": 0.0
+      },
+      "coverage": {
+        "native_pixel_area_m2": 900,
+        "footprint_area_m2": 9000000,
+        "in_conus_area_m2": 9000000,
+        "mapped_cover_area_m2": 9000000,
+        "conus_fraction_of_footprint": 1.0,
+        "cover_fraction_of_conus": 1.0,
+        "elevation_fraction_of_conus": 1.0,
+        "slope_fraction_of_conus": 1.0,
+        "unknown_cover_area_m2": 0
+      },
+      "local_seconds": 0.0649,
+      "national_cell": "c3k-r116-c137"
+    },
+    {
+      "name": "great_smoky_mountains_area",
+      "longitude": -83.5,
+      "latitude": 35.61,
+      "terrain": "rugged",
+      "composition": {
+        "forest_woodland": 0.9894,
+        "shrubland": 0.0,
+        "grass_herbaceous": 0.0106,
+        "agriculture": 0.0,
+        "developed": 0.0,
+        "open_water": 0.0,
+        "sparse_barren": 0.0,
+        "snow_ice": 0.0
+      },
+      "tags": {
+        "riparian_wetland_vegetation": 0.0,
+        "desert_named_ecosystem": 0.0,
+        "developed_vegetation": 0.0
+      },
+      "coverage": {
+        "native_pixel_area_m2": 900,
+        "footprint_area_m2": 9000000,
+        "in_conus_area_m2": 9000000,
+        "mapped_cover_area_m2": 9000000,
+        "conus_fraction_of_footprint": 1.0,
+        "cover_fraction_of_conus": 1.0,
+        "elevation_fraction_of_conus": 1.0,
+        "slope_fraction_of_conus": 1.0,
+        "unknown_cover_area_m2": 0
+      },
+      "local_seconds": 0.0679,
+      "national_cell": "c3k-r599-c1160"
+    },
+    {
+      "name": "death_valley_area",
+      "longitude": -116.85,
+      "latitude": 36.24,
+      "terrain": "flat",
+      "composition": {
+        "forest_woodland": 0.0,
+        "shrubland": 0.006,
+        "grass_herbaceous": 0.0008,
+        "agriculture": 0.0,
+        "developed": 0.0,
+        "open_water": 0.0,
+        "sparse_barren": 0.9932,
+        "snow_ice": 0.0
+      },
+      "tags": {
+        "riparian_wetland_vegetation": 0.0,
+        "desert_named_ecosystem": 1.0,
+        "developed_vegetation": 0.0
+      },
+      "coverage": {
+        "native_pixel_area_m2": 900,
+        "footprint_area_m2": 9000000,
+        "in_conus_area_m2": 9000000,
+        "mapped_cover_area_m2": 9000000,
+        "conus_fraction_of_footprint": 1.0,
+        "cover_fraction_of_conus": 1.0,
+        "elevation_fraction_of_conus": 1.0,
+        "slope_fraction_of_conus": 1.0,
+        "unknown_cover_area_m2": 0
+      },
+      "local_seconds": 0.0646,
+      "national_cell": "c3k-r532-c173"
+    }
+  ],
+  "export_seconds": 89.13
+}

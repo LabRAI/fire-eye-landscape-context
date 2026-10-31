@@ -1,0 +1,7 @@
+{
+  "vegetation": "/path/to/LC20_EVT_220.tif",
+  "elevation": "/path/to/LF2020_Elev_CONUS.tif",
+  "slope": "/path/to/LF2020_SlpD_CONUS.tif",
+  "lookup": "/path/to/LF20_EVT_220.csv",
+  "boundary": "/path/to/conus_boundary.geojson"
+}

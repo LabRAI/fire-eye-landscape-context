@@ -1,0 +1,117 @@
+{
+  "schema_version": "conus-scene-context-v1",
+  "built_at_utc": "2026-10-26T14:06:53.494418+00:00",
+  "grid": {
+    "crs": "EPSG:5070",
+    "origin_upper_left_m": [
+      -2362395.000000002,
+      3267405.0000000037
+    ],
+    "cell_size_m": 3000,
+    "native_pixel_size_m": 30,
+    "native_pixels_per_cell_side": 100,
+    "width": 1564,
+    "height": 1016,
+    "row_direction": "south",
+    "column_direction": "east",
+    "cell_assignment": "floor((x-origin_x)/3000), floor((origin_y-y)/3000); use projected coordinates, not WGS84 envelopes"
+  },
+  "classes": [
+    "forest_woodland",
+    "shrubland",
+    "grass_herbaceous",
+    "agriculture",
+    "developed",
+    "open_water",
+    "sparse_barren",
+    "snow_ice"
+  ],
+  "tags": [
+    "riparian_wetland_vegetation",
+    "desert_named_ecosystem",
+    "developed_vegetation"
+  ],
+  "sources": {
+    "vegetation": {
+      "path": "LC20_EVT_220.tif",
+      "size_bytes": 2985640525,
+      "mtime_ns": 1653516826000000000
+    },
+    "elevation": {
+      "path": "LF2020_Elev_CONUS.tif",
+      "size_bytes": 6820740966,
+      "mtime_ns": 1767728568000000000
+    },
+    "slope": {
+      "path": "LF2020_SlpD_CONUS.tif",
+      "size_bytes": 3936409428,
+      "mtime_ns": 1767731168000000000
+    },
+    "lookup": {
+      "path": "LF20_EVT_220.csv",
+      "size_bytes": 304302,
+      "mtime_ns": 1690561950000000000,
+      "sha256": "80d1b7e9157e0a2f6c75b2822838278a65e14caf3dcb7265196f44aace8795f4"
+    },
+    "boundary": {
+      "path": "conus_boundary.geojson",
+      "size_bytes": 2563969,
+      "mtime_ns": 1793023338803750108,
+      "sha256": "7efbba593dd6a43da332c5217c42bfe8efbb7595282564cdc38731c4c4477e19"
+    }
+  },
+  "source_edition": {
+    "vegetation": 2020,
+    "terrain_product": 2020
+  },
+  "source_hash_scope": "Small lookup/boundary files are SHA-256 verified. Raster identity uses size and modification time, not full raster hashes.",
+  "assets": {
+    "conus_context.npz": {
+      "sha256": "09a25e57b25c5f74e2b09509e8a0f73314d14f03e2f8feb51306700e574c0741",
+      "size_bytes": 19861143
+    },
+    "lower_48.geojson": {
+      "sha256": "7efbba593dd6a43da332c5217c42bfe8efbb7595282564cdc38731c4c4477e19",
+      "size_bytes": 2563969
+    },
+    "taxonomy.json": {
+      "sha256": "a0a89322e3286861fea4e9791c225bffc9b973497e6c5045a8155f17346d058d",
+      "size_bytes": 289457
+    }
+  },
+  "statistics": {
+    "conus_cells": 901703,
+    "mapped_cells": 901487,
+    "native_conus_pixels": 8977864155,
+    "mapped_cover_pixels": 8975725601,
+    "cover_fraction_of_conus": 0.9997617970195273,
+    "native_pixel_counts_by_class": {
+      "forest_woodland": 2812267994,
+      "shrubland": 1687546663,
+      "grass_herbaceous": 1246767324,
+      "agriculture": 2124865169,
+      "developed": 428236496,
+      "open_water": 484734016,
+      "sparse_barren": 189708733,
+      "snow_ice": 1599206
+    },
+    "elevation_fraction_of_conus": 0.9997617970195273,
+    "slope_fraction_of_conus": 0.9997617970195273
+  },
+  "method": "Exact counts and statistics of original 30 m cell centers within the supplied CONUS geometry; no categorical interpolation or source overview sampling.",
+  "limitations": [
+    "Historical baseline, not live conditions.",
+    "National cells describe 3 km context, not a 200 m scene.",
+    "Water fraction does not identify river centerlines; small channels may be unresolved at 30 m.",
+    "Riparian and desert tags follow EVT attributes, not a hydrologic or climate classification.",
+    "Terrain descriptors are rendering heuristics, not official landforms.",
+    "No fire spread, risk, wind, structures or inferred ignition state is supplied."
+  ],
+  "build_config_sha256": "4f94e991cd7e5de5bec22617de5f02fa07b5bf781860420768e337e75db9d4b9",
+  "elapsed_seconds": 245.08,
+  "public_packaging": {
+    "version": "1.0.1",
+    "date": "2026-10-31",
+    "note": "Source filenames replace build-host paths. Numeric data, source editions, response schema and original build timestamp are unchanged. Original build configuration hash is retained for provenance."
+  }
+}

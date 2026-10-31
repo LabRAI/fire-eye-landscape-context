@@ -1,0 +1,4 @@
+numpy>=1.24,<3
+pyproj>=3.4,<4
+shapely>=2,<3
+# Add rasterio>=1.3,<2 for native local patches.
