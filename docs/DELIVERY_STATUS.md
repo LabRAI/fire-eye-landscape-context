@@ -14,12 +14,12 @@
   IDs, source dates, attribution, nullable attributes and file checksums.
 - A reusable extractor and geographic object contract for the simulation author.
 
-The Fire-eye HF/GitHub preview's Simulation entry opens the existing representative
-scene; Map location switches to the geographic camera view. The online demo also
-provides a Simulation action through the same renderer. See
-[simulation integration](SIMULATION_INTEGRATION.md) for scope and data flow. The production domain is not changed by this
-pilot. A new terrain-following fire-spread solver or fully georeferenced animation
-engine is not included.
+The online demo and Fire-eye HF/GitHub preview now fade original tree meshes
+and illustrative fire/smoke into the same map when zooming in. The existing
+Simulation shortcut only moves the map camera. There is no embedded simulation
+page or modal transition. See [simulation integration](SIMULATION_INTEGRATION.md).
+The production domain is unchanged. Actual terrain and validated fire-spread
+physics are not included in this visual adapter.
 
 ## Actual sample contents
 
@@ -44,12 +44,20 @@ schematic. See [design direction and next steps](DIGITAL_SCENE_DIRECTION.md).
 
 ## Verified behavior
 
+- Ordinary zoom activates the custom 3D layer on the original canvas; no modal
+  or iframe is opened. Original mesh bytes total 136,500 and pass integrity checks.
+- Zoom-out stops the animation and restores tree symbols. Pause/resume and fire
+  visibility controls work; the ignition remains at its original source point
+  when the camera moves.
+- Mesh-load failure keeps the basemap usable; Retry detail recovers. Removing
+  the adapter does not destroy the shared graphics context.
+
 - Desktop 1440 px and mobile 390 px: one map canvas, correct geographic anchor,
   continuous zoom to local view, return navigation and no horizontal overflow.
 - Integration keeps the same selected forecast issue and sidebar state.
 - Clicking the independently selected source-polygon interior identifies
   Robert Manning Strozier Library (OSM way/106455325).
-- The New York scene displays 565 recorded tree points as schematic 3D symbols;
+- The New York scene uses 565 recorded tree points for its 3D symbols/models;
   selections return their original Point geometry and nullable heights.
 - Sample geometry passed validity checks; download bytes are hash-checked before
   the viewer adds an object collection.

@@ -65,7 +65,7 @@ nationwide individual-tree reconstruction or building-level fire forecast.
 2. Deliver a bounded, versioned scene manifest: WGS84 anchor, local metre CRS,
    terrain asset and vertical datum, source object IDs, provenance and null fields.
 3. Agree the renderer interface for terrain, structures, vegetation and scenario
-   outputs before adding fire animation. Keep measurements and display assumptions
+   outputs for the physics implementation. Keep measurements and display assumptions
    in separate objects.
 4. Validate known landmarks, zoom continuity, object selection and mobile request/
    memory budgets. Serve prepared assets through HF/static hosting; never require
@@ -74,9 +74,11 @@ nationwide individual-tree reconstruction or building-level fire forecast.
 Detailed terrain and an event-conditioned spread engine remain future work.
 The existing forecast values, native resolution and national atlas are unchanged.
 
-## Existing renderer connected
+## Original simulation models on the map
 
-The online demo and independent preview can now open the existing representative
-Fire-eye simulation for the selected coordinate. See [integration details](SIMULATION_INTEGRATION.md).
-This interim connection reuses the original scene assets/rules; it does not yet
-place those assets on the mapped building/tree geometry or a real terrain mesh.
+At zoom 17.0–17.8, original tree meshes replace the schematic symbols at the same
+recorded points, and an explicitly illustrative fire/smoke scenario appears on
+the same canvas. No button, iframe or separate camera is required. See
+[integration details](SIMULATION_INTEGRATION.md). The sample is not conditioned
+on current weather or a reported fire; real terrain and physical propagation
+remain future work.

@@ -39,7 +39,14 @@ the source data. The scene does not load photographic imagery. See the
 [digital-scene direction](../docs/DIGITAL_SCENE_DIRECTION.md) for rendering
 assumptions and the planned terrain/simulation interface.
 
-The full 3D animation engine should consume the geographic object contract in
+At zoom 17.0–17.8, mapped-simulation.js gradually replaces tree symbols with
+the original oak meshes and adds an illustrative fire/smoke effect on the same
+WebGL canvas. Load it before geographic-scene.js and pass simulationAssetsURL
+to the geographic mount options. Optional failure preserves the normal map.
+See [integration details](../docs/SIMULATION_INTEGRATION.md) for assets, controls
+and the distinction between a visual scenario and physical fire prediction.
+
+The full physical simulation engine should consume the geographic object contract in
 [OBJECT_CONTRACT.md](OBJECT_CONTRACT.md), replacing procedural placement where
 real geometry is available. It must retain unknown areas and fields explicitly.
 

@@ -25,10 +25,11 @@ streets and schematic trees at recorded locations. See the
 See the [API and data-source review](docs/DATA_SOURCES.md), [implementation plan](docs/MICROSCENE_PLAN.md) and
 [geographic object contract](scene/OBJECT_CONTRACT.md) for the simulation provider.
 This finer scene layer is separate from the unchanged national v1.0.1 atlas.
-The online demo's **Simulation** action now opens the existing Fire-eye renderer
-for that location; see [simulation integration](docs/SIMULATION_INTEGRATION.md).
+Zooming in now fades Qiyuan's original tree models and illustrative fire/smoke
+into the same map at recorded positions, without a separate launch step. See
+[simulation integration](docs/SIMULATION_INTEGRATION.md) for scope and limitations.
 The downloadable v1.1.1 archive remains the frozen geographic-data handoff;
-the new online bridge is available in the current repository.
+the current repository and online demo contain the newer zoom integration.
 
 ## What is included
 
