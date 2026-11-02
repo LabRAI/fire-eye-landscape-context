@@ -14,9 +14,10 @@
   IDs, source dates, attribution, nullable attributes and file checksums.
 - A reusable extractor and geographic object contract for the simulation author.
 
-The Fire-eye HF/GitHub preview's Simulation entry uses this geographic camera
-transition. Its Illustration action preserves the older procedural scene as a
-separately labelled visualization. The production domain is not changed by this
+The Fire-eye HF/GitHub preview's Simulation entry opens the existing representative
+scene; Map location switches to the geographic camera view. The online demo also
+provides a Simulation action through the same renderer. See
+[simulation integration](SIMULATION_INTEGRATION.md) for scope and data flow. The production domain is not changed by this
 pilot. A new terrain-following fire-spread solver or fully georeferenced animation
 engine is not included.
 

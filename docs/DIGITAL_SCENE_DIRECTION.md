@@ -73,3 +73,10 @@ nationwide individual-tree reconstruction or building-level fire forecast.
 
 Detailed terrain and an event-conditioned spread engine remain future work.
 The existing forecast values, native resolution and national atlas are unchanged.
+
+## Existing renderer connected
+
+The online demo and independent preview can now open the existing representative
+Fire-eye simulation for the selected coordinate. See [integration details](SIMULATION_INTEGRATION.md).
+This interim connection reuses the original scene assets/rules; it does not yet
+place those assets on the mapped building/tree geometry or a real terrain mesh.
