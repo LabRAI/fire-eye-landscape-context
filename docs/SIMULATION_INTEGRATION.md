@@ -8,6 +8,9 @@ the same location, buildings, streets and camera. There is no Simulation launch
 step, embedded page or modal transition. The region popup's existing Simulation
 shortcut simply zooms into that location.
 
+The map also loads the selected forecast's 50 m spatial refinement automatically
+at local scale; see [data and date handling](AUTOMATIC_RISK_DETAIL.md).
+
 ## Transition and placement
 
 - Geographic streets and buildings appear at neighborhood scale. Tree points

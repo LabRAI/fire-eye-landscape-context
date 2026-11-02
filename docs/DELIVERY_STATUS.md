@@ -2,6 +2,9 @@
 
 2 November 2026
 
+See [automatic risk detail](AUTOMATIC_RISK_DETAIL.md) for the latest same-map
+50 m forecast refinement and more visible illustrative flames.
+
 ## Available in this delivery
 
 - A single MapLibre map and camera from national overview to building-scale view.

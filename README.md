@@ -30,6 +30,8 @@ into the same map at recorded positions, without a separate launch step. See
 [simulation integration](docs/SIMULATION_INTEGRATION.md) for scope and limitations.
 The downloadable v1.1.1 archive remains the frozen geographic-data handoff;
 the current repository and online demo contain the newer zoom integration.
+The live forecast now automatically gains experimental 50 m spatial detail on
+zoom-in; see [automatic risk detail](docs/AUTOMATIC_RISK_DETAIL.md).
 
 ## What is included
 
