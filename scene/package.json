@@ -1,0 +1,14 @@
+{
+  "name": "fire-eye-geographic-scene-extractor",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "extract": "node extract-osm.mjs"
+  },
+  "dependencies": {
+    "osmtogeojson": "3.0.0-beta.5"
+  },
+  "overrides": {
+    "@xmldom/xmldom": "0.8.15"
+  }
+}

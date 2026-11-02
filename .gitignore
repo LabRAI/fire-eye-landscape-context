@@ -5,3 +5,4 @@ __pycache__/
 .venv/
 scene.json
 .DS_Store
+node_modules/

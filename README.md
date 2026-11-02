@@ -5,14 +5,24 @@ simulation scenes across the contiguous United States. Provide a longitude and
 latitude; receive surface fractions, terrain statistics, source coverage and
 scene-selection tags.
 
-**[Download the complete data package · approximately 78 MB](https://github.com/LabRAI/fire-eye-landscape-context/releases/download/v1.0.1/FireEye-CONUS-Landscape-Context-v1.0.1.zip)**
+**[Download the complete handoff · v1.1.0](https://github.com/LabRAI/fire-eye-landscape-context/releases/download/v1.1.0/FireEye-Landscape-Context-v1.1.0.zip)**
 
-[Integration guide](package/README.md) · [Response format](package/response.schema.json) · [Example responses](package/examples) · [Release and checksums](https://github.com/LabRAI/fire-eye-landscape-context/releases/tag/v1.0.1)
+Includes the original national atlas under package/, the new geographic-object samples, scripts, research notes and shared-map demo.
+
+[Integration guide](package/README.md) · [Response format](package/response.schema.json) · [Example responses](package/examples) · [Release and checksums](https://github.com/LabRAI/fire-eye-landscape-context/releases/tag/v1.1.0)
 
 No GitHub sign-in, API key or laboratory server access is required. The complete
 release ZIP includes the national data. GitHub's green **Code → Download ZIP**
 contains the repository's documentation, scripts and examples only; use the
 complete-package link above for coordinate lookup.
+
+## Building and street detail
+
+A new [mapped-scene demo](https://labrai.github.io/fire-eye-landscape-context/demo/)
+keeps one geographic map and camera from national scale to local buildings.
+See the [API and data-source review](docs/DATA_SOURCES.md), [implementation plan](docs/MICROSCENE_PLAN.md) and
+[geographic object contract](scene/OBJECT_CONTRACT.md) for the simulation provider.
+This finer scene layer is separate from the unchanged national v1.0.1 atlas.
 
 ## What is included
 
@@ -26,7 +36,7 @@ complete-package link above for coordinate lookup.
 
 ## Get a distribution
 
-Download and extract the complete package, then open a terminal in its folder.
+Download and extract the complete handoff, then open a terminal in its package/ folder.
 Use Python 3.11 or later:
 
 ~~~sh
@@ -64,5 +74,6 @@ Original product metadata and notices are preserved under
 [package/source_notes.json](package/source_notes.json). Public availability does
 not replace the source providers' terms or notices.
 
-Verify the download with the release's SHA256SUMS file. Inside the archive,
-checksums.json records each packaged file's SHA-256 and size.
+Verify the download with the release's SHA256SUMS file. The complete handoff contains bundle-checksums.json; package/checksums.json retains the national atlas integrity record.
+
+The [original national-only v1.0.1 release](https://github.com/LabRAI/fire-eye-landscape-context/releases/tag/v1.0.1) remains available unchanged.
