@@ -5,11 +5,11 @@ simulation scenes across the contiguous United States. Provide a longitude and
 latitude; receive surface fractions, terrain statistics, source coverage and
 scene-selection tags.
 
-**[Download the complete handoff · v1.1.0](https://github.com/LabRAI/fire-eye-landscape-context/releases/download/v1.1.0/FireEye-Landscape-Context-v1.1.0.zip)**
+**[Download the complete handoff · v1.1.1](https://github.com/LabRAI/fire-eye-landscape-context/releases/download/v1.1.1/FireEye-Landscape-Context-v1.1.1.zip)**
 
 Includes the original national atlas under package/, the new geographic-object samples, scripts, research notes and shared-map demo.
 
-[Integration guide](package/README.md) · [Response format](package/response.schema.json) · [Example responses](package/examples) · [Release and checksums](https://github.com/LabRAI/fire-eye-landscape-context/releases/tag/v1.1.0)
+[Integration guide](package/README.md) · [Response format](package/response.schema.json) · [Example responses](package/examples) · [Release and checksums](https://github.com/LabRAI/fire-eye-landscape-context/releases/tag/v1.1.1)
 
 No GitHub sign-in, API key or laboratory server access is required. The complete
 release ZIP includes the national data. GitHub's green **Code → Download ZIP**
@@ -18,8 +18,10 @@ complete-package link above for coordinate lookup.
 
 ## Building and street detail
 
-A new [mapped-scene demo](https://labrai.github.io/fire-eye-landscape-context/demo/)
-keeps one geographic map and camera from national scale to local buildings.
+A [digital-scene demo](https://labrai.github.io/fire-eye-landscape-context/demo/)
+keeps one geographic map and camera from national scale to local buildings,
+streets and schematic trees at recorded locations. See the
+[digital modeling direction](docs/DIGITAL_SCENE_DIRECTION.md).
 See the [API and data-source review](docs/DATA_SOURCES.md), [implementation plan](docs/MICROSCENE_PLAN.md) and
 [geographic object contract](scene/OBJECT_CONTRACT.md) for the simulation provider.
 This finer scene layer is separate from the unchanged national v1.0.1 atlas.

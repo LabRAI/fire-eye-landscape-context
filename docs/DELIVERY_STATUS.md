@@ -1,12 +1,12 @@
 # Geographic scene pilot · delivery status
 
-1 November 2026
+2 November 2026
 
 ## Available in this delivery
 
 - A single MapLibre map and camera from national overview to building-scale view.
-- Gradual street/building detail, 2D/3D viewing, return to regional view, and an
-  optional USGS aerial reference layer with source-failure isolation.
+- Gradual street/building detail, 2D/3D viewing, return to regional view, and
+  schematic 3D tree symbols at recorded locations. No aerial-photo scene layer.
 - Original OSM vector building footprints and street geometry through the public
   OpenFreeMap basemap. Rendered heights remain explicitly described as estimates
   unless independently verified; they are not survey measurements by this project.
@@ -33,12 +33,13 @@ object geometry. The New York converter omitted one incomplete feature. No
 procedural objects were added to fill missing geometry. Zero recorded trees in
 the FSU sample does not mean the campus has no trees.
 
-![Mapped Bryant Park scene](images/bryant-park.webp)
+![Digital Bryant Park scene](images/bryant-park.webp)
 
 Map footprints, tree point positions and scene heights have different evidence
 levels. This screenshot is a real rendering of source data, not an AI-generated
 image; displayed building shapes/heights are not a guarantee of current survey
-accuracy. The source-image capture predates final minor presentation adjustments.
+accuracy. Tree locations follow source records; their displayed shapes and dimensions are
+schematic. See [design direction and next steps](DIGITAL_SCENE_DIRECTION.md).
 
 ## Verified behavior
 
@@ -47,11 +48,12 @@ accuracy. The source-image capture predates final minor presentation adjustments
 - Integration keeps the same selected forecast issue and sidebar state.
 - Clicking the independently selected source-polygon interior identifies
   Robert Manning Strozier Library (OSM way/106455325).
-- The New York scene displays recorded Point geometries for trees.
+- The New York scene displays 565 recorded tree points as schematic 3D symbols;
+  selections return their original Point geometry and nullable heights.
 - Sample geometry passed validity checks; download bytes are hash-checked before
   the viewer adds an object collection.
-- Injected imagery and detailed-object failures preserve the geographic map.
-- Active fires regression passed for standard and 50 m maps on desktop and
+- Detailed-object failures preserve the geographic map.
+- The 1 November active-fires regression passed for standard and 50 m maps on desktop and
   mobile: reports remain over the same heatmap/date, and the tested source
   failure can be retried. No laboratory-server requests were made by these tests.
 - The extractor dependency audit reported zero known vulnerabilities at the check.

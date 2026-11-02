@@ -1,6 +1,6 @@
 # From regional landscape context to mapped local scenes
 
-Research and implementation plan · 1 November 2026
+Research and implementation plan · updated 2 November 2026
 
 ## Objective
 
@@ -9,8 +9,10 @@ neighborhood and an individual building. Use mapped object geometry for scene
 placement. Retain the existing regional distribution package as environmental
 context; its 3 km cells cannot locate buildings, streets, plazas or individual trees.
 
-The current illustrative scene places assets procedurally, and the independent
-Fire-eye map stops at zoom 12. Both limit recognition of a real target building.
+The first shared-map pilot now reaches zoom 20 using mapped footprints and
+streets. The earlier procedural illustration remains separately labelled.
+Follow the [digital-scene direction](DIGITAL_SCENE_DIRECTION.md): geometric
+models, real geographic anchors and explicit rendering assumptions.
 
 ## Data choices
 

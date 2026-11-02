@@ -33,9 +33,11 @@ visually reduced at high zoom; its values and resolution are unchanged.
 
 The public basemap uses OpenFreeMap's OpenStreetMap/OpenMapTiles vector tiles.
 Their render_height is a display property, not proof of surveyed building height.
-The optional USGS aerial layer helps inspect recognizable geometry and canopy;
-its acquisition dates vary and its imagery is not live. Increasing zoom above a
-tile's native scale only magnifies that tile.
+Recorded tree points transition to schematic 3D symbols at zoom 16–17. Their
+shapes and crown sizes are display assumptions; missing heights remain null in
+the source data. The scene does not load photographic imagery. See the
+[digital-scene direction](../docs/DIGITAL_SCENE_DIRECTION.md) for rendering
+assumptions and the planned terrain/simulation interface.
 
 The full 3D animation engine should consume the geographic object contract in
 [OBJECT_CONTRACT.md](OBJECT_CONTRACT.md), replacing procedural placement where
@@ -46,9 +48,8 @@ real geometry is available. It must retain unknown areas and fields explicitly.
 OpenStreetMap-derived extracts: © OpenStreetMap contributors, ODbL 1.0.
 https://www.openstreetmap.org/copyright
 
-OpenFreeMap / OpenMapTiles provide the displayed vector basemap. USGS / USDA
-The National Map provides optional orthophotography. Original source terms and
-attribution remain applicable. osmtogeojson is a separately installed dependency;
+OpenFreeMap / OpenMapTiles provide the displayed vector basemap. Original source
+terms and attribution remain applicable. osmtogeojson is a separately installed dependency;
 its own license accompanies that package.
 
 To run the complete downloaded demo locally, serve the handoff root with python -m http.server 8000, then open http://localhost:8000/demo/. The online demo loads public map tiles; the national atlas query is independent and works offline once its Python dependencies are installed.
